@@ -1,0 +1,22 @@
+﻿@model IEnumerable<AZ_204_SqlWebApp.Models.Course>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Id</th>
+                    <th>Course Name</th>
+                    <th>Course Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var course in Model)
+                {
+                    <tr>
+                        <td>@course.CourseId</td>
+                        <td>@course.CourseName</td>
+                        <td>@course.CourseRating</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
